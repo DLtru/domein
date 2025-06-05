@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Domeenileht - Kontakt</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="header-container">
+            <div class="header-left">
+                <a href="index.html">Domeenileht</a>
+            </div>
+            <div class="header-right">
+                <a href="#">Email</a>
+                <a href="#">Cloud</a>
+                <a href="#">Help</a>
+                <a href="#">Logi sisse</a>
+                <a href="#">EST ▼</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="user-info">
+        <span id="current-date">2025-06-03 14:29:41</span>
+        <span id="current-user">DLtru</span>
+    </div>
+
+    <div class="main-content">
+        <div class="steps">
+            <div class="step">1. Leia domeen</div>
+            <div class="step active">2. Sisesta kontaktandmed</div>
+            <div class="step">3. Hakka kasutama</div>
+        </div>
+
+        <h2>Domeeni registreerimine</h2>
+        <form id="registrationForm" onsubmit="return submitForm(event)">
+            <div class="form-group">
+                <label>Nimi</label>
+                <input type="text" id="name" required placeholder="Sisesta oma nimi">
+            </div>
+
+            <div class="form-group">
+                <label>E-post</label>
+                <input type="email" id="email" required placeholder="example@domain.com">
+            </div>
+
+            <div class="form-group">
+                <label>Telefon</label>
+                <input type="tel" id="phone" required placeholder="+XXX XXXXXXXX">
+            </div>
+
+            <div class="order-summary">
+                <h3>Tellimuse kokkuvõte</h3>
+                <div class="summary-item">
+                    <span>Domeen:</span>
+                    <span id="selected-domain">example.ee</span>
+                </div>
+                <div class="summary-item">
+                    <span>Periood:</span>
+                    <span>1 aasta</span>
+                </div>
+                <div class="summary-item">
+                    <span>Kokku:</span>
+                    <span>25.00 eurot</span>
+                </div>
+                <div class="form-group">
+                    <input type="text" placeholder="Sooduskood">
+                </div>
+            </div>
+
+            <button type="submit" class="continue-button">JÄTKA MAKSEGA</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

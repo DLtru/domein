@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="et">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Domeenileht - Otsing</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <div class="header-container">
+            <div class="header-left">
+                <a href="index.html">Domeenileht</a>
+            </div>
+            <div class="header-right">
+                <a href="#">Email</a>
+                <a href="#">Cloud</a>
+                <a href="#">Help</a>
+                <a href="#">Logi sisse</a>
+                <a href="#">EST ▼</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="user-info">
+        <span id="current-date">2025-06-03 14:29:41</span>
+        <span id="current-user">DLtru</span>
+    </div>
+
+    <div class="main-content">
+        <div class="steps">
+            <div class="step active">1. Leia domeen</div>
+            <div class="step">2. Sisesta kontaktandmed</div>
+            <div class="step">3. Hakka kasutama</div>
+        </div>
+
+        <h2>Leia sobiv domeen</h2>
+        <p>Domeeninimi peab olema 1-63 tähemärki pikk, sisaldama ainult tähti (a-z, ä, ö, ü, õ, š, ž), numbreid (0-9) ja sidekriipse.</p>
+
+        <div class="search-container">
+            <input type="text" class="domain-input" placeholder="Sisesta domeen">
+            <select class="domain-select">
+                <option value=".ee">.ee</option>
+            </select>
+            <button class="check-button">KONTROLLI SAADAVUST</button>
+        </div>
+
+        <div class="domain-available" style="display: none;">
+            ✓ <span id="domain-name"></span> on saadaval. Vali sobiv periood
+        </div>
+
+        <div class="period-select" style="display: none;">
+            <select id="period-select">
+                <option value="3">3 kuud</option>
+                <option value="6">6 kuud</option>
+                <option value="12">1 aasta</option>
+            </select>
+            <div class="price">€99.00 + KM</div>
+        </div>
+
+        <button class="continue-button" style="display: none;">JÄTKA SISESTAMISEGA</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
